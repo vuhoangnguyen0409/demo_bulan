@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" contEnglisht="">
+  <meta name="description" contEnglisht="">
+  <meta name="author" contEnglisht="">
+  <meta name="copyright" contEnglisht="">
+  <title>Nguyen demo 01</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5,user-scalable=yes">
+  <link href="js/fullpage/jquery.fullPage.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="js/slide/plugins.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="js/slide/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="js/lettering/animate.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/style_tb.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/style_sp.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <canvas id='world'></canvas>
+    <div class="shapes">
+      <svg class="shape hexa" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                        <polygon fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" points="27.5,21.904 15,28.809  2.5,21.904 2.5,8.095 15,1.19 27.5,8.095 "/>
+                    </svg>
+      <svg class="shape triangle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                                 <polygon fill="none" stroke-width="1px" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" points="14.921,2.27 28.667,25.5 1.175,25.5 "/>
+                             </svg>
+    </div>
+    <!-- shapes -->
+    <div class="icon_fix icon_fix_top"></div>
+    <div class="icon_fix icon_fix_bottom"></div>
+    <div class="lang">
+      <a href="#" title="English" class="hover_line">EN</a>
+      <a href="#" title="Japanese" class="hover_line">JP</a>
+    </div>
+    <div class="nav_btn"><span></span> <span class="middle"></span> <span></span></div>
+    <div class="nav_wrap">
+      <nav class="gnav">
+        <ul>
+          <li><a class="hover_line" href="#top">TOP</a></li>
+          <li><a class="hover_line" href="#concept">CONCEPT</a></li>
+          <li><a class="hover_line" href="#gallery">GALLERY</a></li>
+          <li><a class="hover_line" href="#about">ABOUT</a></li>
+          <li><a class="hover_line" href="#contact">CONTACT</a></li>
+        </ul>
+        <p class="social">
+          <a href="#">INSTAGRAM</a><span class="tume-English"> / </span><a href="#">FACEBOOK</a>
+          <span class="tume-English"> / </span><a href="#">TUMBLR</a>
+        </p>
+      </nav>
+    </div>
+    <!--/ .nav_wrap-->
+    <div id="fullpage">
+      <section class="section top">
+        <img src="img/logo.png" alt="oro viet nam">
+      </section>
+      <!--section-->
+      <section class="section concept">
+        <h2 class="tlt">O R O V I E T N A M</h2>
+        <div class="contents">
+          <div class="English">English English English English bulan is a shop of selected used clothing. please come to our shop and relax as your second room. we hope you'll meet your favorite ones here.<br>English English English English bulan is a shop of selected used
+            clothing. please come to our shop and relax as your second room. we hope you'll meet your favorite ones here.<br>English English English English bulan is a shop of selected used clothing. please come to our shop and relax as your second room.
+            we hope you'll meet your favorite ones here.</div>
+          <div class="Japanese">Japanese Japanese Japanese Japanese bulan is a shop of selected used clothing. please come to our shop and relax as your second room. we hope you'll meet your favorite ones here.<br>Japanese Japanese Japanese Japanese bulan is a shop of selected
+            used clothing. please come to our shop and relax as your second room. we hope you'll meet your favorite ones here.<br>Japanese Japanese Japanese Japanese bulan is a shop of selected used clothing. please come to our shop and relax as your
+            second room. we hope you'll meet your favorite ones here.</div>
+        </div>
+      </section>
+      <!--section-->
+      <section class="section about">
+        <h2 class="tlt">A B O U T U S</h2>
+        <div class="contents">
+          <div class="English">
+            <div class="flex">
+              <dl class="about_info">
+                <dt>COMPANY INFO English</dt>
+                <dd>Name bulan<br> E-mail info@bulan.tokyo<br> <a class="hover_line">Tel +81[0]50-5309-1468</a></dd>
+              </dl>
+              <dl class="about_info">
+                <dt>ACCESS English</dt>
+                <dd>Name bulan<br> E-mail info@bulan.tokyo<br> <a class="hover_line">Tel +81[0]50-5309-1468</a></dd>
+              </dl>
+            </div>
+          </div>
+          <div class="Japanese">
+            <div class="flex">
+              <dl class="about_info">
+                <dt>COMPANY INFO Japanese</dt>
+                <dd>Name bulan<br> E-mail info@bulan.tokyo<br> <a class="hover_line">Tel +81[0]50-5309-1468</a></dd>
+              </dl>
+              <dl class="about_info">
+                <dt>ACCESS Japanese</dt>
+                <dd>Name bulan<br> E-mail info@bulan.tokyo<br> <a class="hover_line">Tel +81[0]50-5309-1468</a></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--section-->
+      <section class="section info">
+        <h2 class="tlt">I N F O</h2>
+        <div class="contents">
+          <div class="box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  							<line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+  							<line class="left" x1="0" y1="460" x2="0" y2="-920"></line>
+  							<line class="bottom" x1="300" y1="460" x2="-600" y2="460"></line>
+  							<line class="right" x1="300" y1="0" x2="300" y2="1380"></line>
+  						</svg>
+            <h3>V</h3>
+            <span>2012</span>
+            <span>Broccoli, Asparagus, Curry</span>
+          </div>
+          <div class="box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  							<line class="top" x1="0" y1="0" x2="900" y2="0"/>
+  							<line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+  							<line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+  							<line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+  						</svg>
+            <h3>H</h3>
+            <span>2012</span>
+            <span>Broccoli, Asparagus, Curry</span>
+          </div>
+          <div class="box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  							<line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+  							<line class="left" x1="0" y1="460" x2="0" y2="-920"></line>
+  							<line class="bottom" x1="300" y1="460" x2="-600" y2="460"></line>
+  							<line class="right" x1="300" y1="0" x2="300" y2="1380"></line>
+  						</svg>
+            <h3>N</h3>
+            <span>2012</span>
+            <span>Broccoli, Asparagus, Curry</span>
+          </div>
+        </div>
+        <div class="tb_display">
+          <span class="info_btn"></span><span class="info_btn"></span><span class="info_btn"></span>
+        </div>
+      </section>
+      <!--section-->
+      <section class="section gallery">
+        <div class="contents">
+          <div class="ms-container home-slider">
+            <!-- Swiper Slider -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="slide-inner" data-swiper-parallax="45%">
+                    <div class="overlay"></div>
+                    <div class="slide-inner--image" style="background-image: url('assets/images/2.jpg')"></div>
+                    <div class="slide-inner--info">
+                      <a href="#" data-type="page-transition" class="ms-btn--slider">View</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="slide-inner" data-swiper-parallax="45%">
+                    <div class="overlay"></div>
+                    <div class="slide-inner--image" style="background-image: url('assets/images/1.jpg')">
+                    </div>
+                    <div class="slide-inner--info">
+                      <a href="#" data-type="page-transition" class="ms-btn--slider">View</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="slide-inner" data-swiper-parallax="45%">
+                    <div class="overlay"></div>
+                    <div class="slide-inner--image" style="background-image: url('assets/images/3.jpg')">
+                    </div>
+                    <div class="slide-inner--info">
+                      <a href="#" data-type="page-transition" class="ms-btn--slider">View</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="slide-inner" data-swiper-parallax="45%">
+                    <div class="overlay"></div>
+                    <div class="slide-inner--image" style="background-image: url('assets/images/4.jpg')">
+                    </div>
+                    <div class="slide-inner--info">
+                      <a href="#" data-type="page-transition" class="ms-btn--slider">View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-nav-btn">
+                <div class="swiper-button-prev swiper-button-white">prev</div>
+                <div class="swiper-button-next swiper-button-white">next</div>
+              </div>
+              <!-- Pagination -->
+              <div class="expanded-timeline">
+                <div class="expanded-timeline__counter"><span></span><span></span></div>
+                <div class="swiper-pagination"></div>
+                <div class="scroll-message">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16.5 15.98" class="scroll-svg"><title>Asset 1</title><g>
+              <g data-name="Layer 1"><polygon fill="#fff" points="0 4.64 0.71 5.34 3.85 2.2 3.85 15.98 4.85 15.98 4.85 2.2 8 5.34 8.71 4.64 4.35 0.29 0 4.64"></polygon><polygon fill="#fff" points="11.65 0 11.65 13.79 8.5 10.64 7.79 11.35 12.15 15.7 16.5 11.35 15.79 10.64 12.65 13.79 12.65 0 11.65 0"></polygon></g></g></svg>Scroll
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--section-->
+      <section class="section contact">
+        <h2 class="tlt">C O N T A C T</h2>
+        <div class="contents">
+          <div class="English">
+            <div class="f_form">
+              <form id="send_mail" action="" method="post">
+                <p><input name="name" type="text" size="20" placeholder="Name" required="">
+                </p>
+                <p><input name="tel" type="text" placeholder="Tel" required="">
+                </p>
+                <p><input name="mail" type="email" placeholder="E-mail" required="">
+                </p>
+                <p><textarea name="message" placeholder="Content ..." rows="10" cols="50" required=""></textarea>
+                </p>
+                <p class="submit bb">
+                  <input type="submit" value="Submit" class="submitBtn">
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="Japanese">
+            <div class="f_form">
+              <form id="send_mail" action="" method="post">
+                <p><input name="name" type="text" size="20" placeholder="フルネーム" required="">
+                </p>
+                <p><input name="tel" type="text" placeholder="Tel" required="">
+                </p>
+                <p><input name="mail" type="email" placeholder="内容" required="">
+                </p>
+                <p><textarea name="message" placeholder="内容 ..." rows="10" cols="50" required=""></textarea>
+                </p>
+                <p class="submit bb">
+                  <input type="submit" value="送　信 (内容確認)" class="submitBtn">
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--section-->
+    </div>
+    <!--/ #fullpage-->
+  </div>
+
+  <!--/ #wrapper-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type='text/javascript' src='js/fullpage/jquery.fullPage.js'></script>
+  <script type='text/javascript' src='js/inview/jquery.inview.min.js'></script>
+  <script type='text/javascript' src='js/slide/plugins.min.js'></script>
+  <script type='text/javascript' src='js/slide/main.js'></script>
+  <script type='text/javascript' src='js/lettering/jquery.textillate.js'></script>
+  <script type='text/javascript' src='js/lettering/jquery.lettering.js'></script>
+  <script type='text/javascript' src='js/share.js'></script>
+  <!--<script type='text/javascript' src='js/canvas.js'></script>-->
+</body>
+
+</html>

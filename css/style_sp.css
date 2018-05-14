@@ -1,0 +1,19 @@
+@media screen and (max-width: 769px) {
+	.nav_wrap {
+		left: -200%;
+	}
+	.nav_btn span {
+		background-color: #fff;
+	}
+	.tlt {
+		font-size: 35px;
+	}
+}
+@media screen and (max-width: 468px) {
+	.flex {
+		display: block;
+	}
+	.about_info {
+		margin-bottom: 30px;
+	}
+})

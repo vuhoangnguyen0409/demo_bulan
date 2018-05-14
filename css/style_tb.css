@@ -1,0 +1,15 @@
+@media screen and (max-width: 960px) {
+	.tb_display {
+		display: block;
+	}
+	.nav_wrap {
+		width: 100%;
+	}
+	.box {
+		display: none;
+		margin: auto;
+	}
+	.box:nth-of-type(1) {
+		display: block;
+	}
+}
