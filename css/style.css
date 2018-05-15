@@ -186,9 +186,6 @@ icon-moon1
   border-radius: 40px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
-  width: 490px;
-  height: 490px;
-  background: #071b26;
 }
 
 .icon-moon1:before {
@@ -203,8 +200,11 @@ icon-moon1
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1;
+  animation-name: ani_moon;
+  animation-duration: 4s;
+  -webkit-transform: rotateY(0deg) translate(-50%, -50%); /* Safari */
+  transform: rotateY(0deg) translate(-50%, -50%); /* Standard syntax */
 }
 
 .icon-moon1:before {
@@ -213,11 +213,15 @@ icon-moon1
   -moz-box-shadow: inset 2px 2px 2px #d2c4a7;
 }
 
-.anmation_container .icon-moon1:before, .anmation_container.active .icon-moon1:before {
-  -webkit-transition: 1.4s;
-  -moz-transition: 1.4s;
-  -o-transition: 1.4s;
-  transition: 1.4s;
+@keyframes ani_moon {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotateY(90deg) ; /* Safari */
+    transform: translate(-50%, -50%) rotateY(90deg) ; /* Standard syntax */
+  }
+  to {
+    -webkit-transform: rotateY(0deg) translate(-50%, -50%); /* Safari */
+    transform: rotateY(0deg) translate(-50%, -50%); /* Standard syntax */
+  }
 }
 
 /*----------------------------------------
@@ -241,7 +245,7 @@ icon-moon1
   font-family: 'Ailerons';
 }
 
-.tlt {
+.tlt, .tlt_top {
   font-size: 40px;
   color: #d2c4a7;
   text-align: center;
@@ -420,7 +424,6 @@ section .Japanese {
 }
 
 .gnav {
-  display: none;
   position: absolute;
   top: 50%;
   left: 10%;
