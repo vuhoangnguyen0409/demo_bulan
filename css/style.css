@@ -560,6 +560,7 @@ section.section {
   color: #d2c4a7;
   -webkit-transition: background 0.4s 0.5s;
   transition: background 0.4s 0.5s;
+  margin-bottom: 10px;
 }
 
 .box h3 {

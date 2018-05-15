@@ -28,7 +28,7 @@ $(document).ready(function() {
   //language
   $('.lang a').on('click', function() {
     var lang_choose = '.' + $(this).attr('title');
-    $('.contents > div').hide();
+    $('.English, .Japanese').hide();
     $(lang_choose).fadeIn();
     return false;
   });
