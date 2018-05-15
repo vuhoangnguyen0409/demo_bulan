@@ -177,6 +177,49 @@ shape animation
   }
 }
 
+/*--------------------
+icon-moon1
+--------------------*/
+
+.icon-moon1 {
+  overflow: hidden;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  width: 490px;
+  height: 490px;
+  background: #071b26;
+}
+
+.icon-moon1:before {
+  content: '';
+  overflow: hidden;
+  border-radius: 300px;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  width: 490px;
+  height: 490px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.icon-moon1:before {
+  box-shadow: inset 2px 2px 2px #d2c4a7;
+  -webkit-box-shadow: inset 2px 2px 2px #d2c4a7;
+  -moz-box-shadow: inset 2px 2px 2px #d2c4a7;
+}
+
+.anmation_container .icon-moon1:before, .anmation_container.active .icon-moon1:before {
+  -webkit-transition: 1.4s;
+  -moz-transition: 1.4s;
+  -o-transition: 1.4s;
+  transition: 1.4s;
+}
+
 /*----------------------------------------
     canvas
 ----------------------------------------*/
@@ -190,6 +233,13 @@ shape animation
 /*----------------------------------------
     title
 ----------------------------------------*/
+
+.heading1-EN {
+  font-size: 2.2rem;
+  letter-spacing: 1.52rem;
+  color: #d2c4a7;
+  font-family: 'Ailerons';
+}
 
 .tlt {
   font-size: 40px;
@@ -455,8 +505,13 @@ section.section {
   gallery
   -------------*/
 
+.wrapper2 {
+  max-width: 1000px;
+}
+
 .gallery {
   padding: 0px !important;
+  display: flex;
 }
 
 /*---------------
@@ -482,12 +537,15 @@ section.section {
 /*---------------
   info
   -------------*/
+
 .hide {
   display: none;
 }
+
 .info {
   text-align: center;
 }
+
 .box {
   width: 300px;
   height: 460px;
@@ -496,14 +554,14 @@ section.section {
   display: inline-block;
   margin: 0 10px;
   cursor: pointer;
-  color: #2c3e50;
+  color: #d2c4a7;
   -webkit-transition: background 0.4s 0.5s;
   transition: background 0.4s 0.5s;
 }
 
 .box h3 {
   font-family: "Ruthie", cursive;
-  font-size: 180px;
+  font-size: 145px;
   line-height: 370px;
   margin: 0;
   font-weight: 400;
@@ -511,57 +569,56 @@ section.section {
 }
 
 .box svg {
-	position: absolute;
-	top: 0;
-	left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .box svg line {
-	stroke-width: 3;
-	stroke: #2c3e50;
-	fill: none;
-	-webkit-transition: all .8s ease-in-out;
-	transition: all .8s ease-in-out;
+  stroke-width: 3;
+  stroke: #d2c4a7;
+  fill: none;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 
 .box:hover svg line {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
-.box svg line.top,
-.box svg line.bottom {
-	stroke-dasharray: 330 240;
+.box svg line.top, .box svg line.bottom {
+  stroke-dasharray: 330 240;
 }
 
-.box svg line.left,
-.box svg line.right {
-	stroke-dasharray: 490 400;
+.box svg line.left, .box svg line.right {
+  stroke-dasharray: 490 400;
 }
 
 .box:hover svg line.top {
-	-webkit-transform: translateX(-600px);
-	transform: translateX(-600px);
+  -webkit-transform: translateX(-600px);
+  transform: translateX(-600px);
 }
 
 .box:hover svg line.bottom {
-	-webkit-transform: translateX(600px);
-	transform: translateX(600px);
+  -webkit-transform: translateX(600px);
+  transform: translateX(600px);
 }
 
 .box:hover svg line.left {
-	-webkit-transform: translateY(920px);
-	transform: translateY(920px);
+  -webkit-transform: translateY(920px);
+  transform: translateY(920px);
 }
 
 .box:hover svg line.right {
-	-webkit-transform: translateY(-920px);
-	transform: translateY(-920px);
+  -webkit-transform: translateY(-920px);
+  transform: translateY(-920px);
 }
 
 .tb_display {
   display: none;
 }
+
 .info_btn {
   display: inline-block;
   height: 5px;
@@ -570,6 +627,7 @@ section.section {
   background: #d2c4a7;
   cursor: pointer;
 }
+
 /*---------------
     contact
     -------------*/

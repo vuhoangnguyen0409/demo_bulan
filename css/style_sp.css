@@ -10,10 +10,17 @@
 	}
 }
 @media screen and (max-width: 468px) {
+	.nav_wrap::before, .nav_wrap::after {
+		transform: none;
+	}
 	.flex {
 		display: block;
 	}
 	.about_info {
 		margin-bottom: 30px;
+	}
+	.icon-moon1:before {
+		height: 300px;
+		width: 300px;
 	}
 })

@@ -10,9 +10,11 @@
   <title>Nguyen demo 01</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5,user-scalable=yes">
   <link href="js/fullpage/jquery.fullPage.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="js/slide/plugins.min.css" rel="stylesheet" type="text/css" media="all" />
+  <!--<link href="js/slide/plugins.min.css" rel="stylesheet" type="text/css" media="all" />-->
   <link href="js/slide/style.css" rel="stylesheet" type="text/css" media="all" />
   <link href="js/lettering/animate.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/layout.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/module.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/style_tb.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/style_sp.css" rel="stylesheet" type="text/css" media="all" />
@@ -56,7 +58,8 @@
     <!--/ .nav_wrap-->
     <div id="fullpage">
       <section class="section top">
-        <img src="img/logo.png" alt="oro viet nam">
+        <h1 class="heading1-EN"><span class=" fade-in copy_delay1">B</span><span class="animation_box fade-in copy_delay2">U</span><span class="animation_box fade-in copy_delay3">L</span><span class="animation_box fade-in copy_delay4">A</span><span class="animation_box fade-in copy_delay5">N</span></h1>
+        <span class="icon-moon1 animation_box fade-in anm_speed2-xl"></span>
       </section>
       <!--section-->
       <section class="section concept">
@@ -145,69 +148,142 @@
       <!--section-->
       <section class="section gallery">
         <div class="contents">
-          <div class="ms-container home-slider">
-            <!-- Swiper Slider -->
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <!-- Slide -->
-                <div class="swiper-slide">
-                  <div class="slide-inner" data-swiper-parallax="45%">
-                    <div class="overlay"></div>
-                    <div class="slide-inner--image" style="background-image: url('assets/images/2.jpg')"></div>
-                    <div class="slide-inner--info">
-                      <a href="#" data-type="page-transition" class="ms-btn--slider">View</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slide -->
-                <div class="swiper-slide">
-                  <div class="slide-inner" data-swiper-parallax="45%">
-                    <div class="overlay"></div>
-                    <div class="slide-inner--image" style="background-image: url('assets/images/1.jpg')">
-                    </div>
-                    <div class="slide-inner--info">
-                      <a href="#" data-type="page-transition" class="ms-btn--slider">View</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slide -->
-                <div class="swiper-slide">
-                  <div class="slide-inner" data-swiper-parallax="45%">
-                    <div class="overlay"></div>
-                    <div class="slide-inner--image" style="background-image: url('assets/images/3.jpg')">
-                    </div>
-                    <div class="slide-inner--info">
-                      <a href="#" data-type="page-transition" class="ms-btn--slider">View</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slide -->
-                <div class="swiper-slide">
-                  <div class="slide-inner" data-swiper-parallax="45%">
-                    <div class="overlay"></div>
-                    <div class="slide-inner--image" style="background-image: url('assets/images/4.jpg')">
-                    </div>
-                    <div class="slide-inner--info">
-                      <a href="#" data-type="page-transition" class="ms-btn--slider">View</a>
-                    </div>
+          <!--slide01-->
+          <div class="slide wrapper2">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="row thumbnail t_hidden-full">
+                  <div class="row-col12 anmation_container">
+                    <div class="thum-box"><a href="img\gallery\large\img01.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img\gallery\img01.jpg" alt="GALLERY-img">
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-nav-btn">
-                <div class="swiper-button-prev swiper-button-white">prev</div>
-                <div class="swiper-button-next swiper-button-white">next</div>
-              </div>
-              <!-- Pagination -->
-              <div class="expanded-timeline">
-                <div class="expanded-timeline__counter"><span></span><span></span></div>
-                <div class="swiper-pagination"></div>
-                <div class="scroll-message">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16.5 15.98" class="scroll-svg"><title>Asset 1</title><g>
-              <g data-name="Layer 1"><polygon fill="#fff" points="0 4.64 0.71 5.34 3.85 2.2 3.85 15.98 4.85 15.98 4.85 2.2 8 5.34 8.71 4.64 4.35 0.29 0 4.64"></polygon><polygon fill="#fff" points="11.65 0 11.65 13.79 8.5 10.64 7.79 11.35 12.15 15.7 16.5 11.35 15.79 10.64 12.65 13.79 12.65 0 11.65 0"></polygon></g></g></svg>Scroll
+              <div class="col-md-4">
+                <div class="row thumbnail t_hidden-full">
+                  <div class="col-md-12 anmation_container">
+                    <div class="thum-box"><a href="img\gallery\large\img02.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img\gallery\img02.jpg" alt="GALLERY-img">
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                  <div class="col-md-12 anmation_container">
+                    <div class="thum-box"><a href="img\gallery\large\img03.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img\gallery\img03.jpg" alt="GALLERY-img">
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!--slide01 end-->
+          <!--slide02-->
+          <div class="slide wrapper2">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row thumbnail t_hidden-full">
+                  <div class="col-md-4 anmation_container">
+                    <div class="thum-box"><a href="img\gallery\large\img04.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img\gallery\img04.jpg" alt="GALLERY-img">
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                  <div class="col-md-4 anmation_container">
+                    <div class="thum-box"><a href="img\gallery\large\img05.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img\gallery\img05.jpg" alt="GALLERY-img">
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                  <div class="col-md-4 anmation_container">
+                    <div class="thum-box"><a href="img\gallery\large\img06.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img\gallery\img06.jpg" alt="GALLERY-img">
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="row thumbnail t_hidden-full">
+                  <div class="col-md-8 anmation_container">
+                    <div class="thum-box"><a href="img\gallery\large\img07.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img\gallery\img07.jpg" alt="GALLERY-img">
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                  <div class="col-md-4 anmation_container">
+                    <div class="thum-box"><a href="img\gallery\large\img08.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img\gallery\img08.jpg" alt="GALLERY-img">
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--slide02 end-->
+          <!--slide03-->
+          <div class="slide wrapper2">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="row thumbnail t_hidden-full">
+                  <div class="row-col12 anmation_container">
+                    <div class="thum-box"><a href="img/gallery/large/img09.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img/gallery/img09.jpg" alt="GALLERY-img" />
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row thumbnail t_hidden-full">
+                  <div class="col-md-12 anmation_container">
+                    <div class="thum-box"><a href="img/gallery/large/img10.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img/gallery/img10.jpg" alt="GALLERY-img" />
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                  <div class="col-md-12 anmation_container">
+                    <div class="thum-box"><a href="img/gallery/large/img11.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img/gallery/img11.jpg" alt="GALLERY-img" />
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--slide03 end-->
+          <!--slide04-->
+          <div class="slide wrapper2">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row thumbnail t_hidden-full">
+                  <div class="col-md-4 anmation_container">
+                    <div class="thum-box"><a href="img/gallery/large/img12.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img/gallery/img12.jpg" alt="GALLERY-img" />
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                  <div class="col-md-8 anmation_container">
+                    <div class="thum-box"><a href="img/gallery/large/img13.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img/gallery/img13.jpg" alt="GALLERY-img" />
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="row thumbnail t_hidden-full">
+                  <div class="col-md-4 anmation_container">
+                    <div class="thum-box"><a href="img/gallery/large/img14.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img/gallery/img14.jpg" alt="GALLERY-img" />
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                  <div class="col-md-4 anmation_container">
+                    <div class="thum-box"><a href="img/gallery/large/img15.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img/gallery/img15.jpg" alt="GALLERY-img" />
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                  <div class="col-md-4 anmation_container">
+                    <div class="thum-box"><a href="img/gallery/large/img16.jpg" data-lity="data-lity"><img class="animation_box anm_speed2-l" src="img/gallery/img16.jpg" alt="GALLERY-img" />
+                    <p class="t_caption"><span class="animation_box anm_speed-s icon-box icon-plus cicon-colorYellow"></span></p>
+                    </a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--slide04 end-->
         </div>
       </section>
       <!--section-->
@@ -259,10 +335,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type='text/javascript' src='js/fullpage/jquery.fullPage.js'></script>
   <script type='text/javascript' src='js/inview/jquery.inview.min.js'></script>
-  <script type='text/javascript' src='js/slide/plugins.min.js'></script>
-  <script type='text/javascript' src='js/slide/main.js'></script>
   <script type='text/javascript' src='js/lettering/jquery.textillate.js'></script>
   <script type='text/javascript' src='js/lettering/jquery.lettering.js'></script>
+  <script type='text/javascript' src='js/lity.js'></script>
   <script type='text/javascript' src='js/share.js'></script>
   <!--<script type='text/javascript' src='js/canvas.js'></script>-->
 </body>
