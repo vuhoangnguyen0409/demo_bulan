@@ -68,7 +68,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 body {
   font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, sans-serif;
   background-color: #071b26;
-  color: #4e4e4e;
+  color: #fff;
   line-height: 1.5;
   font-size: 76%;
   overflow: hidden;
@@ -80,7 +80,7 @@ body {
 }
 
 a:link, a:visited {
-  color: #4e4e4e;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -457,7 +457,7 @@ header {}
 #content_wrap {}
 
 section.section {
-  padding: 0 10%;
+  padding: 0 7%;
   height: 100vh;
 }
 
@@ -523,8 +523,9 @@ section.section {
 
 .about_info dt {
   text-decoration: underline;
-  font-size: 22px;
+  font-size: 25px;
   margin-bottom: 10px;
+  color: #d2c4a7;
 }
 
 .flex {
@@ -561,6 +562,10 @@ section.section {
   -webkit-transition: background 0.4s 0.5s;
   transition: background 0.4s 0.5s;
   margin-bottom: 10px;
+}
+
+.box span {
+  color: #fff;
 }
 
 .box h3 {
