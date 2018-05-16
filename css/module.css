@@ -1,0 +1,902 @@
+@charset "utf-8";
+
+.icon-box{
+	display:block;
+	width:40px;
+	height:40px;
+	text-align:center;
+	position:relative;
+}
+
+
+@media screen and (max-width : 767px){
+	.icon-box{ width:30px; height:30px;}
+	.icon-box::before,
+	.icon-box::after{
+		line-height:32px;
+		vertical-align: top;
+	}
+}
+
+
+
+
+
+ /*菱形*/
+.icon-squareRotate{
+	transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);
+}
+
+/*＋（プラス）*/
+.icon-plus:before,
+.icon-plus:after{height:50px; line-height:50px; width:2px; top:-6px; left:25px; content:''; display:block; position:absolute; }
+.icon-plus:after{transform:rotate(90deg);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg);}
+
+
+/*バツ*/
+.icon-plusRotate:before,
+.icon-plusRotate:after{height:40px; width:2px; top:0px; left:19px; content:''; display:block; position:absolute; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);}
+.icon-plusRotate:after{transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);}
+
+/*ライン*/
+.icon-line-s:before{ width:100px; height:2px; /*top:20px; left:0px;*/ content:''; display:block; position:absolute;}
+.icon-line-m:before{ width:220px; height:2px; /*top:20px; left:0px;*/ content:''; display:block; position:absolute;}
+.icon-line-l:before{ width:400px; height:2px; /*top:20px; left:0px;*/ content:''; display:block; position:absolute;}
+
+
+@media screen and (max-width : 920px){
+	.icon-plusRotate::before,
+	.icon-plusRotate::after{
+		height:20px; width:2px; top:5px; left:15px;
+	}
+	.icon-home1:before{ border-width: 0 10px 10px; top:3px; left:5px;}
+	.icon-home1:after{ height:6px; width:6px; top:12px; left:8px; border-width: 5px 4px 0;}
+
+	.icon-moon1:before{ width:400px; height:400px; margin:-210px 0 0 -160px;}
+
+}
+
+@media screen and (max-width : 479px){
+	.icon-moon1:before{ width:200px; height:200px; margin:-100px 0 0 -100px;}
+}
+
+
+
+/* ****************************************************
+  アイコンカラー【icon-color】
+***************************************************** */
+
+/*webフォントアイコン用*/
+.icon-colorWhite::before,
+.icon-colorWhite::after{ color:#FFF !important;}/*ホワイト*/
+.icon-colorBlack::before,
+.icon-colorBlack::after{ color:#1a1a1a !important;}/*ブラック*/
+
+/*CSSアイコン用*/
+.cicon-colorWhite::before,
+.cicon-colorWhite::after{ background:#FFF !important;}/*ホワイト*/
+.cicon-colorYellow::before,
+.cicon-colorYellow::after{ background:#d2c4a7 !important;}/*イエロー*/
+
+
+/* ****************************************************
+  アイコン背景【.icon-bg】
+***************************************************** */
+
+.icon-bg{ position: fixed; width:100%; height:100%;}
+
+.bg-icon-01:before,.bg-icon-02:before,.bg-icon-03:before
+{ position: fixed; content:''; display:block; height:2px; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);}
+
+.icon-bg .bg-icon-01:before{ width:2px; top:-2px; left:267px; }
+.icon-bg .bg-icon-02:before{ width:2px; top:-2px; left:369px;}
+.icon-bg .bg-icon-03:before{ width:2px; bottom:-2px; right:287px;}
+
+.icon-bg.active .bg-icon-01:before,.icon-bg.active .bg-icon-02:before,.icon-bg.active .bg-icon-03:before{ }
+
+.icon-bg.active .bg-icon-01:before{ width:100px; top:34px; left:183px; }
+.icon-bg.active .bg-icon-02:before{ width:400px; top:122px; left:46px; -webkit-transition-delay: 0.06s; -moz-transition-delay: 0.06s; -o-transition-delay: 0.06s; transition-delay: 0.06s;}
+.icon-bg.active .bg-icon-03:before{ width:220px; bottom:76px; right:100px; -webkit-transition-delay: 0.06s; -moz-transition-delay: 0.06s; -o-transition-delay: 0.06s; transition-delay: 0.06s;}
+
+@media screen and (max-width : 1280px){
+	.icon-bg .bg-icon-01:before{ left:227px;}
+	.icon-bg .bg-icon-02:before{ left:321px;}
+	.icon-bg .bg-icon-03:before{ right:247px;}
+
+	.icon-bg.active .bg-icon-01:before{ left:143px; }
+	.icon-bg.active .bg-icon-02:before{ width:300px; top:105px; left:66px; }
+	.icon-bg.active .bg-icon-03:before{ right:60px; }
+}
+
+@media screen and (max-width : 767px){
+	.icon-bg .bg-icon-01:before{ left:145px;}
+	.icon-bg .bg-icon-02:before{ left:188px;}
+	.icon-bg .bg-icon-03:before{ right:137px;}
+
+	.icon-bg.active .bg-icon-01:before{ left:60px; }
+	.icon-bg.active .bg-icon-02:before{ width:220px; top:77px; left:0px; }
+	.icon-bg.active .bg-icon-03:before{ width:150px; bottom:51px; right:10px; }
+}
+
+@media screen and (max-width : 479px){
+	.icon-bg .bg-icon-01:before{ left:106px;}
+	.icon-bg .bg-icon-02:before{ left:145px;}
+
+	.icon-bg.active .bg-icon-01:before{ width:80px; top:27px; left:39px; }
+	.icon-bg.active .bg-icon-02:before{ width:150px; top:52px; left:17px; }
+}
+
+
+.button{
+	text-decoration:none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+	text-align:center;
+
+	/*詳細設定*/
+	font-family: 'Ailerons';
+}
+
+
+/* ****************************************************
+  ボーダー【b_border】
+***************************************************** */
+
+
+.b_border{
+	color:#d2c4a7;
+	background-color:#071b26;
+	border:1px solid #d2c4a7;
+}
+
+/*.b_border:hover{ color:#FFF; background-color:#1a1a1a; border:1px solid #1a1a1a;}*/
+
+.b_border::before { color: #1a1a1a; }
+.b_border:hover::before{ color: #FFF; }
+
+
+
+/* ****************************************************
+  サイズ【b_size】
+***************************************************** */
+
+.b_size-s{ min-width:90px; padding:14px 10px 16px; font-size:0.85rem; letter-spacing:-0.13rem;}
+.b_size-m{ min-width:200px; padding:12px 10px;}
+.b_size-l{ min-width:340px; padding:20px 10px; font-size:0.85rem; letter-spacing:-0.13rem;}
+.b_size-full{ width:100%; padding:16px 10px;}
+
+@media screen and (max-width : 920px){
+	.b_size-l{ min-width:260px; padding:16px 10px;}
+}
+
+@media screen and (max-width : 767px){
+	.b_size-s{ min-width:80px; }
+	.b_size-m{ min-width:150px; }
+	.b_size-l{ min-width:260px; padding:16px 10px;}
+}
+
+@media screen and (max-width : 479px){
+	.b_size-s,
+	.b_size-m{ min-width:65px; padding:12px 10px;}
+	.b_size-l{ min-width:120px; }
+}
+
+
+/* ****************************************************
+  左右中央揃え【buttonContainer】
+***************************************************** */
+
+.buttonContainer-center,
+.buttonContainer-right,
+.buttonContainer-left{
+	position: relative;
+    text-align: center;
+}
+
+.buttonContainer-center li,
+.buttonContainer-right li,
+.buttonContainer-left li {
+    display:inline-block;
+    padding: 0;
+}
+/*中央寄せ*/
+.buttonContainer-center { text-align: center; }
+.buttonContainer-center li { margin:0; }
+.buttonContainer-center li:first-child{ margin-left:0;}
+.buttonContainer-center li:last-child{ margin-right:0;}
+
+/*右寄せ*/
+.buttonContainer-right { text-align: right; }
+.buttonContainer-right li { margin: 0 0 0 10px; }
+.buttonContainer-right li:first-child{ margin-left:0;}
+
+.about .buttonContainer-right{ max-width:254px;}
+
+/*左寄せ*/
+.buttonContainer-left { text-align: left; }
+.buttonContainer-left li { margin: 0 10px 0 0; }
+.buttonContainer-left li:last-child{ margin-right:0;}
+
+@media screen and (max-width : 920px){
+	.about .buttonContainer-right{ max-width:210px;}
+}
+
+@media screen and (max-width : 767px){
+
+	.buttonContainer-center li,
+	.buttonContainer-center li:first-child,
+	.buttonContainer-center li:last-child,
+	.buttonContainer-right li,
+	.buttonContainer-right li:first-child,
+	.buttonContainer-left li{ margin:0 0 10px 0; }/*ボトムのみマージン*/
+
+	.buttonContainer-center li:last-child,
+	.buttonContainer-right li:last-child,
+	.buttonContainer-left li:last-child{ margin:0; }
+
+	.about .buttonContainer-right{
+		max-width: 100%;
+		text-align: center;
+		padding-top:30px;
+	}
+}
+
+@media screen and (max-width : 479px){
+	.about .buttonContainer-right{
+		padding-top:18px;
+	}
+}
+
+/* ****************************************************
+  カラー【b_color】
+***************************************************** */
+
+.b_colorYellow{ background-color:#d2c4a7; color:#FFF; }/*イエロー*/
+
+
+.b_colorWhite{ background-color:#FFF; color: #d2c4a7; }/*ホワイト*/
+.b_colorBlack{ background-color:#1a1a1a; color:#FFF; }/*ブラック*/
+.b_colorGray{ background-color:#83838f; color:#FFF; }/*グレー*/
+.b_colorRed{ background-color:#c93434; color:#FFF; }/*レッド*/
+.b_colorOrange{ background-color:#f5683a; color:#FFF; }/*オレンジ*/
+.b_colorBlue-light{ background-color:#55acee; color:#FFF; }/*ブルーライト*/
+.b_colorBlue{ background-color:#5887ab; color:#FFF; }/*ブルー*/
+.b_colorBlue-dark{ background-color:#3a5897; color:#FFF; }/*ダークブルー*/
+.b_colorPink{ background-color:#f26b88; color:#FFF; }/*ピンク*/
+
+
+.b_colorBlack:hover,
+.b_colorGray:hover,
+.b_colorRed:hover,
+.b_colorOrange:hover,
+.b_colorBlue-light:hover,
+.b_colorBlue:hover,
+.b_colorBlue-dark:hover,
+.b_colorPink:hover{
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8; opacity:0.8;
+}
+
+/* ****************************************************
+  アニメーション【.b_anm】
+***************************************************** */
+
+/*初期設定*/
+.b_anm-roll span { position: absolute; width: 100%; left:0; top:0;}
+.b_anm-roll { position: relative; display:inline-block; }
+
+.b_anm-roll.b_size-s,.b_anm-roll.b_size-s span,.b_anm-roll.b_size-m,.b_anm-roll.b_size-m span,
+.b_anm-roll.b_size-l,.b_anm-roll.b_size-l span,.b_anm-roll.b_size-full,.b_anm-roll.b_size-full span{ padding:0 !important;}
+
+.b_anm-roll span:nth-child(1) { transform: rotateX(90deg); -webkit-transform: rotateX(90deg); -moz-transform: rotateX(90deg); }
+.b_anm-roll span:nth-child(2),
+.b_anm-roll:hover span:nth-child(1) { transform: rotateX(0deg); -webkit-transform: rotateX(0deg); -moz-transform: rotateX(0deg); }
+.b_anm-roll:hover span:nth-child(2) { transform: rotateX(-90deg); -webkit-transform: rotateX(-90deg); -moz-transform: rotateX(-90deg); }
+
+/*奥行*/
+.b_anm-roll { perspective: 300px; -webkit-perspective: 300px; -moz-perspective: 300px; }
+
+/*サイズごとの設定*/
+.b_anm-roll.b_size-s,.b_anm-roll.b_size-s span,
+.b_anm-roll.b_size-s,.b_anm-roll.b_size-m span{ height:60px; line-height:60px; transform-origin: 50% 50% -30px; -webkit-transform-origin: 50% 50% -30px; -moz-transform-origin: 50% 50% -30px;}
+.b_anm-roll.b_size-l,.b_anm-roll.b_size-l span,
+.b_anm-roll.b_size-full,.b_anm-roll.b_size-full span{ height:70px; line-height:70px; transform-origin: 50% 50% -35px; -webkit-transform-origin: 50% 50% -35px; -moz-transform-origin: 50% 50% -35px;}
+
+@media screen and (max-width : 920px){
+	.b_anm-roll.b_size-s,.b_anm-roll.b_size-s span,
+	.b_anm-roll.b_size-s,.b_anm-roll.b_size-m span,
+	.b_anm-roll.b_size-l,.b_anm-roll.b_size-l span,
+	.b_anm-roll.b_size-full,.b_anm-roll.b_size-full span{ height:50px; line-height:50px; transform-origin: 50% 50% -25px; -webkit-transform-origin: 50% 50% -25px; -moz-transform-origin: 50% 50% -25px;}
+
+}
+
+@media screen and (max-width : 767px){
+	.b_anm-roll.b_size-s,.b_anm-roll.b_size-s span,
+	.b_anm-roll.b_size-s,.b_anm-roll.b_size-m span,
+	.b_anm-roll.b_size-l,.b_anm-roll.b_size-l span,
+	.b_anm-roll.b_size-full,.b_anm-roll.b_size-full span{ height:44px; line-height:44px; transform-origin: 50% 50% -22px; -webkit-transform-origin: 50% 50% -22px; -moz-transform-origin: 50% 50% -22px;}
+}
+
+@media screen and (max-width : 479px){
+	.b_anm-roll.b_size-s,.b_anm-roll.b_size-s span,
+	.b_anm-roll.b_size-s,.b_anm-roll.b_size-m span,
+	.b_anm-roll.b_size-l,.b_anm-roll.b_size-l span,
+	.b_anm-roll.b_size-full,.b_anm-roll.b_size-full span{ height:40px; line-height:40px; transform-origin: 50% 50% -20px; -webkit-transform-origin: 50% 50% -20px; -moz-transform-origin: 50% 50% -20px;}
+
+}
+/*
+#####################################################################
+
+	アニメーション【.animation】
+
+#####################################################################
+*/
+
+.anmation_container{}
+.animation_box,
+.animation_box:before{
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
+/* ****************************************************
+  キーフレーム【.keyframes】
+***************************************************** */
+
+
+/**********背景カラー【.keyframes_bg-color】*********************/
+
+/*ブラック（全体）【.keyframes_bg-black-full】*/
+@-webkit-keyframes keyframes_bg-black { 0% { background-color: #FFF; } 100% { background-color: #1a1a1a;} }
+@keyframes keyframes_bg-black { 0% { background-color: #FFF; } 100% { background-color: #1a1a1a;} }
+.anmation_container.active .keyframes_bg-black { -webkit-animation-name: keyframes_bg-black; animation-name: keyframes_bg-black; }
+
+
+/**********実行後のスタイル維持【.keyframes_mode】*********************/
+.animation_box.keyframes_forwards{ -webkit-animation-fill-mode:forwards; animation-fill-mode:forwards; }
+
+
+/**********実行方向【.keyframes_direction】*********************/
+
+/*逆順で実行*/
+.animation_box.keyframes_reverse{ -webkit-animation-direction:reverse; animation-direction:reverse; }
+/*繰り返し回数が奇数の場合は標準、偶数の場合は逆順*/
+.animation_box.keyframes_alternate{ -webkit-animation-direction:alternate; animation-direction:alternate; }
+/*繰り返し回数が奇数の場合は逆順、偶数の場合は標準*/
+.animation_box.keyframes_alternate-reverse{ -webkit-animation-direction:alternate-reverse; animation-direction:alternate-reverse; }
+
+
+/**********ループ回数【.keyframes_count】*********************/
+
+/*ループ*/
+.animation_box.keyframes_count-loop { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+/*ループ回数*/
+.animation_box.keyframes_count-02 { -webkit-animation-iteration-count: 2; animation-iteration-count: 2; }
+.animation_box.keyframes_count-03 { -webkit-animation-iteration-count: 3; animation-iteration-count: 3; }
+.animation_box.keyframes_count-04 { -webkit-animation-iteration-count: 4; animation-iteration-count: 4; }
+.animation_box.keyframes_count-05 { -webkit-animation-iteration-count: 5; animation-iteration-count: 5; }
+
+
+
+/* ****************************************************
+  トランスレート【.translate】
+***************************************************** */
+
+/*上方向に移動 */
+.anmation_container.active .translate-top-out{ -ms-transition: translateY(-20px); -webkit-transform: translateY(-20px); transform: translateY(-20px); }
+/*下方向に移動 */
+.anmation_container.active .translate-bottom-out{ -ms-transform: translateY(20px); -webkit-transform: translateY(20px); transform: translateY(20px); }
+/*左方向に移動 */
+.anmation_container.active .translate-left-out{ -ms-transform: translateX(-20px); -webkit-transform: translateX(-20px); transform: translateX(-20px); }
+/*右方向に移動 */
+.anmation_container.active .translate-right-out{ -ms-transform: translateX(20px); -webkit-transform: translateX(20px); transform: translateX(20px); }
+
+
+/*上方向から定位置に移動 */
+.anmation_container .translate-top-in{ -ms-transition: translateY(-20px); -webkit-transform: translateY(-20px); transform: translateY(-20px); }
+.anmation_container.active .translate-top-in{ -ms-transition: translateY(0px); -webkit-transform: translateY(0px); transform: translateY(0px); }
+/*下方向から定位置に移動 */
+.anmation_container .translate-bottom-in{ -ms-transform: translateY(20px); -webkit-transform: translateY(20px); transform: translateY(20px); }
+.anmation_container.active .translate-bottom-in{ -ms-transition: translateY(0px); -webkit-transform: translateY(0px); transform: translateY(0px); }
+/*左方向から定位置に移動 */
+.anmation_container .translate-left-in{ -ms-transform: translateX(-20px); -webkit-transform: translateX(-20px); transform: translateX(-20px); }
+.anmation_container.active .translate-left-in{ -ms-transition: translateY(0px); -webkit-transform: translateY(0px); transform: translateY(0px); }
+/*右方向から定位置に移動 */
+.anmation_container .translate-right-in{ -ms-transform: translateX(20px); -webkit-transform: translateX(20px); transform: translateX(20px); }
+.anmation_container.active .translate-right-in{ -ms-transition: translateY(0px); -webkit-transform: translateY(0px); transform: translateY(0px); }
+
+/* ****************************************************
+  フェード【.fade】
+***************************************************** */
+
+.anmation_container .fade-in{
+	filter: alpha(opacity=0);
+	-moz-opacity:0;
+	opacity:0;
+}
+.anmation_container.active .fade-in{
+	filter: alpha(opacity=100);
+	-moz-opacity:1.0;
+	opacity:1.0;
+}
+
+
+.anmation_container .fade-out{
+	filter: alpha(opacity=100);
+	-moz-opacity:1.0;
+	opacity:1.0;
+}
+.anmation_container.active .fade-out{
+	filter: alpha(opacity=0);
+	-moz-opacity:0;
+	opacity:0;
+}
+
+/* ****************************************************
+  ＿ズーム【.zoom】
+***************************************************** */
+
+/*拡大 */
+.anmation_container .zoom-out-s{ -ms-transform: scale(1.05); -webkit-transform: scale(1.05); transform: scale(1.05); }
+.anmation_container .zoom-out-m{ -ms-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1); }
+.anmation_container .zoom-out-l{ -ms-transform: scale(1.15); -webkit-transform: scale(1.15); transform: scale(1.15); }
+.anmation_container .zoom-out-xl{ -ms-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2); }
+/*縮小 */
+.anmation_container .zoom-in-s{ -ms-transform: scale(0.95); -webkit-transform: scale(0.95); transform: scale(0.95); }
+.anmation_container .zoom-in-m{ -ms-transform: scale(0.9); -webkit-transform: scale(0.9); transform: scale(0.9); }
+.anmation_container .zoom-in-l{ -ms-transform: scale(0.85); -webkit-transform: scale(0.85); transform: scale(0.85); }
+.anmation_container .zoom-in-xl{ -ms-transform: scale(0.8); -webkit-transform: scale(0.8); transform: scale(0.8); }
+
+
+/*拡大 */
+.anmation_container.active .zoom-out-s,
+.anmation_container.active .zoom-out-m,
+.anmation_container.active .zoom-out-l,
+.anmation_container.active .zoom-out-xl,
+/*縮小 */
+.anmation_container.active .zoom-in-s,
+.anmation_container.active .zoom-in-m,
+.anmation_container.active .zoom-in-l,
+.anmation_container.active .zoom-in-xl{ -ms-transform: scale(1.0); -webkit-transform: scale(1.0); transform: scale(1.0); }
+
+/* ****************************************************
+  グラデーション【.gradient】
+***************************************************** */
+
+.anmation_container .gradient_black {
+	background: linear-gradient(90deg, #FFF 0%, #1a1a1a 100%) repeat scroll 0 0 / 1000% 100%;
+}
+
+.anmation_container.active .gradient_black {
+	background: linear-gradient(90deg, #FFF 0%, #1a1a1a 100%) repeat scroll 0 0 / 100% 100%;
+}
+
+
+/* ****************************************************
+  スピードオプション【.anm_speed】
+***************************************************** */
+
+.anm_speed-s {
+	-webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; transition-duration: 0.2s;
+	-webkit-animation-duration: 0.2s; -moz-animation-duration: 0.2s; -o-animation-duration: 0.2s; animation-duration: 0.2s;/*keyframes用*/
+}
+.anm_speed-m {
+	-webkit-transition-duration: 0.4s; -moz-transition-duration: 0.4s; -o-transition-duration: 0.4s; transition-duration: 0.4s;
+	-webkit-animation-duration: 1.0s; -moz-animation-duration: 1.0s; -o-animation-duration: 1.0s; animation-duration: 1.0s;/*keyframes用*/
+}
+.anm_speed-l {
+	-webkit-transition-duration: 0.6s; -moz-transition-duration: 0.6s; -o-transition-duration: 0.6s; transition-duration: 0.6s;
+	-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; -o-animation-duration: 1.5s; animation-duration: 1.5s;/*keyframes用*/
+}
+.anm_speed-xl{
+	-webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s; -o-transition-duration: 0.8s; transition-duration: 0.8s;
+	-webkit-animation-duration: 2.0s; -moz-animation-duration: 2.0s; -o-animation-duration: 2.0s; animation-duration: 2.0s;/*keyframes用*/
+}
+
+.anm_speed2-s {
+	-webkit-transition-duration: 1.0s; -moz-transition-duration: 1.0s; -o-transition-duration: 1.0s; transition-duration: 1.0s;
+	-webkit-animation-duration: 4.0s; -moz-animation-duration: 4.0s; -o-animation-duration: 4.0s; animation-duration: 4.0s;/*keyframes用*/
+}
+.anm_speed2-m {
+	-webkit-transition-duration: 1.5s; -moz-transition-duration: 1.5s; -o-transition-duration: 1.5s; transition-duration: 1.5s;
+	-webkit-animation-duration: 6.0s; -moz-animation-duration: 6.0s; -o-animation-duration: 6.0s; animation-duration: 6.0s;/*keyframes用*/
+}
+.anm_speed2-l {
+	-webkit-transition-duration: 2.0s; -moz-transition-duration: 2.0s; -o-transition-duration: 2.0s; transition-duration: 2.0s;
+	-webkit-animation-duration: 8.0s; -moz-animation-duration: 8.0s; -o-animation-duration: 8.0s; animation-duration: 8.0s;/*keyframes用*/
+}
+.anm_speed2-xl{
+	-webkit-transition-duration: 2.5s; -moz-transition-duration: 2.5s; -o-transition-duration: 2.5s; transition-duration: 2.5s;
+	-webkit-animation-duration: 10s; -moz-animation-duration: 10s; -o-animation-duration: 10s; animation-duration: 10s;/*keyframes用*/
+}
+
+/* ****************************************************
+  ディレイオプション【.anm_delay】
+***************************************************** */
+
+.anm_delay-s,
+.anm_delay-s:before,
+.anm_delay-s path{ -webkit-transition-delay: 0.1s; -moz-transition-delay: 0.1s; -o-transition-delay: 0.1s; transition-delay: 0.1s;}
+.anm_delay-m,
+.anm_delay-m:before{ -webkit-transition-delay: 0.3s; -moz-transition-delay: 0.3s; -o-transition-delay: 0.3s; transition-delay: 0.3s;}
+.anm_delay-l,
+.anm_delay-l:before{ -webkit-transition-delay: 0.5s; -moz-transition-delay: 0.5s; -o-transition-delay: 0.5s; transition-delay: 0.5s;}
+.anm_delay-xl,
+.anm_delay-xl:before{ -webkit-transition-delay: 0.7s; -moz-transition-delay: 0.7s; -o-transition-delay: 0.7s; transition-delay: 0.7s;}
+
+.anm_delay2-s,
+.anm_delay2-s:before{ -webkit-transition-delay: 1.0s; -moz-transition-delay: 1.0s; -o-transition-delay: 1.0s; transition-delay: 1.0s;}
+.anm_delay2-m,
+.anm_delay2-m:before{ -webkit-transition-delay: 1.5s; -moz-transition-delay: 1.5s; -o-transition-delay: 1.5s; transition-delay: 1.5s;}
+.anm_delay2-l,
+.anm_delay2-l:before{ -webkit-transition-delay: 2.0s; -moz-transition-delay: 2.0s; -o-transition-delay: 2.0s; transition-delay: 2.0s;}
+.anm_delay2-xl,
+.anm_delay2-xl:before{ -webkit-transition-delay: 2.5s; -moz-transition-delay: 2.5s; -o-transition-delay: 2.5s; transition-delay: 2.5s;}
+
+
+
+/* ****************************************************
+  原点オプション【.anm_origin】
+***************************************************** */
+
+/*左上 */
+.anm_origin-lt{ -moz-transform-origin:left top; -webkit-transform-origin:left top; -o-transform-origin:left top; -ms-transform-origin:left top; }
+/*左下 */
+.anm_origin-lb{ -moz-transform-origin:left bottom; -webkit-transform-origin:left bottom; -o-transform-origin:left bottom; -ms-transform-origin:left bottom; }
+/*右上 */
+.anm_origin-rt{ -moz-transform-origin:right top; -webkit-transform-origin:right top; -o-transform-origin:right top; -ms-transform-origin:right top; }
+/*右下 */
+.anm_origin-rb{ -moz-transform-origin:right bottom; -webkit-transform-origin:right bottom; -o-transform-origin:right bottom; -ms-transform-origin:right bottom; }
+
+
+/* ****************************************************
+  ドローSVG【.drawsvg】
+***************************************************** */
+
+.drawsvg{ display:block;}
+.drawsvg g{ fill: rgba(0,0,0,0);  /* fill: none; の代わり */ }
+.drawsvg path{ stroke:#1a1a1a; stroke-width:1; }
+
+.drawsvg.active g{ fill:#1a1a1a; }
+.drawsvg.active path{ stroke-width:0; }
+
+/*SVG個別設定（都度追加）*/
+.svg_box01,.svg_box01 svg{ width:201px; height:116px;}
+.svg_box02,.svg_box02 svg{ width:207px; height:105px;}
+.svg_box03,.svg_box03 svg{ width:198px; height:50px;}
+
+
+/*
+#####################################################################
+
+	その他モジュール
+
+#####################################################################
+*/
+
+/* ****************************************************
+  色【bg-Color】
+***************************************************** */
+
+/*使用カラー*/
+.bg-yellow  { background: #d2c4a7 none repeat scroll 0 0; }
+.bg-dark-blue { background: #071b26 none repeat scroll 0 0; }
+
+.bg-black { background: #1a1a1a none repeat scroll 0 0; }
+.bg-gray { background: #ccc none repeat scroll 0 0; }
+.bg-gray2 { background: #eaeaea none repeat scroll 0 0; }
+.bg-white { background: #FFF none repeat scroll 0 0; }
+
+/* ****************************************************
+  影【bg-shadow】
+***************************************************** */
+
+/*外側ボトムにシャドウ*/
+.bg-shadow{
+	box-shadow:rgba(0, 0, 0, 0.3) 0px 10px 30px 0px;
+	-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0px 10px 30px 0px;
+	-moz-box-shadow:rgba(0, 0, 0, 0.3) 0px 10px 30px 0px;
+}
+
+/*内側にシャドウ*/
+.bg-shadow-inner{
+
+	box-shadow:rgba(0, 0, 0, 0.19) 0px 1px 5px 0px inset;
+	-webkit-box-shadow:rgba(0, 0, 0, 0.19) 0px 1px 5px 0px inset;
+	-moz-box-shadow:rgba(0, 0, 0, 0.19) 0px 1px 5px 0px inset;
+}
+
+
+
+/* ****************************************************
+  タブ【.tab】
+***************************************************** */
+
+/*タブメニューエリア*/
+
+.tab_menu{ width:84px; margin:auto;}
+
+.tab_menu ul li{
+
+	/*詳細設定*/
+	text-align:center;
+	width:40px;
+	margin:0;
+}
+.tab_menu ul li a{ color:#d2c4a7; filter: alpha(opacity=15); -moz-opacity:0.15; opacity:0.15;}
+.tab_menu ul li a:hover{ filter: alpha(opacity=0.3); -moz-opacity:0.3; opacity:0.3;}
+.tab_menu ul li.active a{ filter: alpha(opacity=100); -moz-opacity:1.0; opacity:1.0;}
+
+.tab_menu ul li.active{
+	/*詳細設定*/
+	background:none;
+}
+
+/*コンテンツエリア*/
+.tab_content{
+	position: relative;
+}
+.concept .tab_content{ height:210px;}
+.about .tab_content{ height:210px;}
+
+.tab_content .tab{ position:absolute; width: 100%; filter: alpha(opacity=0); -moz-opacity:0; opacity:0; z-index:-1;}
+.tab_content .tab.active{ filter: alpha(opacity=100); -moz-opacity:1.0; opacity:1.0; z-index:1;}
+
+@media screen and (max-width : 920px){
+	.concept .tab_content{ height:150px;}
+	.about .tab_content{ height:150px;}
+}
+
+@media screen and (max-width : 767px){
+	/*.concept .tab_content{ height:155px;}*/
+	.about .tab_content{ height:380px;}
+}
+
+@media screen and (max-width : 710px){
+	/*.concept .tab_content{ height:200px;}*/
+}
+
+@media screen and (max-width : 600px){
+	/*.concept .tab_content{ height:210px;}*/
+}
+
+
+@media screen and (max-width : 479px){
+	.concept .tab_content{ height:120px;}
+	.about .tab_content{ height:265px;}
+}
+
+@media screen and (max-width : 320px){
+	.concept .tab_content{ height:180px;}
+}
+
+
+/* ****************************************************
+  フルスクリーン【.fullscreen】
+***************************************************** */
+
+.fullscreen {
+	width: 100vw !important;
+	height: 100vh !important;
+}
+
+/* ****************************************************
+  フルページ【.fullPage】
+***************************************************** */
+
+.fullPage{}
+
+
+/********** 初期設定 ********/
+html.fp-enabled,.fp-enabled body { margin: 0; padding: 0; overflow:hidden;/*Avoid flicker on slides transitions for mobile phones #336 */-webkit-tap-highlight-color: rgba(0,0,0,0);}
+#superContainer { height: 100%; position: relative;/* Touch detection for Windows 8 */ -ms-touch-action: none;/* IE 11 on Windows Phone 8.1*/touch-action: none;}
+.fp-section { position: relative; -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */ -moz-box-sizing: border-box; /* <=28 */ box-sizing: border-box;}
+.fp-slide { float: left; }
+.fp-slide, .fp-slidesContainer { height: 100%; display: block;}
+.fp-slides { z-index:1; height: 100%; overflow: hidden; position: relative;}
+.fp-section.fp-table, .fp-slide.fp-table { display: table; table-layout:fixed; width: 100%;}
+.fp-tableCell { display: table-cell; vertical-align: middle; width: 100%; height: 100%; }
+.fp-slidesContainer { float: left; position: relative; }
+.fp-controlArrow { -webkit-user-select: none; -moz-user-select: none; -khtml-user-select: none;-ms-user-select: none;position: absolute;z-index: 4; cursor: pointer; width: 0; height: 0;}
+.fp-controlArrow.fp-prev { width: 0;}
+.fp-scrollable { overflow: hidden; position: relative;}
+.fp-scroller{ overflow: hidden; }
+.iScrollIndicator{ border: 0 !important; }
+.fp-notransition { -webkit-transition: none !important; transition: none !important; }
+.fp-auto-height.fp-section,.fp-auto-height .fp-slide,.fp-auto-height .fp-tableCell{ height: auto !important;}
+.fp-responsive .fp-auto-height-responsive.fp-section,.fp-responsive .fp-auto-height-responsive .fp-slide,.fp-responsive .fp-auto-height-responsive .fp-tableCell {height: auto !important;}
+
+/********** カスタム設定 ********/
+
+
+/*スライダーの矢印*/
+.fp-controlArrow{
+	margin-top: -25px;
+	border-style: solid;
+	top: 50%;
+}
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next{
+	color: transparent;
+	width:80px;
+	height:50px;
+}
+
+.fp-controlArrow.fp-prev { left: 200px; }
+.fp-controlArrow.fp-next { right:200px; }
+
+.fp-controlArrow.fp-prev:before{content:''; height:18px; width:18px; border:2px solid #d2c4a7; display:block; border-right-width:0; border-bottom-width:0; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg); position:absolute; top:10px; left:7px;}
+.fp-controlArrow.fp-next:before{content:''; height:18px; width:18px; border:2px solid #d2c4a7; display:block; border-left-width:0; border-top-width:0; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg); position:absolute; top:10px; right:7px;}
+
+.fp-controlArrow.fp-prev:hover:before,
+.fp-controlArrow.fp-next:hover:before{ border-color:#FFF; }
+
+
+.fp-slidesNav{ left: 50%; opacity: 1; }
+.fp-slidesNav.bottom { bottom: 20px; }
+.fp-slidesNav.top { top: 17px; }
+
+.fp-slidesNav ul li{
+	width: 14px;
+    height: 8px;
+    margin: 14px 12px;
+}
+
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span{
+	height: 11px;
+    width: 11px;
+    margin: -5px 0 0 -5px;
+    border-radius: 100%;
+	background: #FFF;
+}
+
+
+.fp-slidesNav ul li a span{
+	border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    background: #d2c4a7;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+}
+
+
+.fp-slidesNav ul li:hover a span{ background: #FFF; }
+
+@media screen and (max-width : 920px){
+
+	#fp-nav.right { right: 0px; }
+
+	.fp-controlArrow.fp-prev {
+		left: 55px;
+	}
+	.fp-controlArrow.fp-next {
+		right: 55px;
+	}
+
+	.fp-controlArrow.fp-prev { left: 50px; }
+	.fp-controlArrow.fp-next { right:50px; }
+
+}
+
+@media screen and (max-width : 920px){
+	.fp-controlArrow.fp-prev { left: 50px; }
+	.fp-controlArrow.fp-next { right:68px; }
+}
+
+@media screen and (max-width : 479px){
+	.fp-slidesNav ul li{
+		margin: 14px 9px;
+	}
+
+	.fp-controlArrow.fp-prev { left: 30px; }
+	.fp-controlArrow.fp-next { right:48px; }
+
+	.fp-controlArrow.fp-prev,
+	.fp-controlArrow.fp-next{
+		width:40px;
+		height:40px;
+	}
+	.fp-controlArrow.fp-prev:before,
+	.fp-controlArrow.fp-next:before{ width:12px; height:12px; top:10px;}
+
+	#fp-nav{ right:0 !important;}
+	#fp-nav ul li{ margin:18px 16px;}
+
+	#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span{
+		height: 10px;
+		width: 10px;
+		margin: -5px 0 0 -5px;
+	}
+	#fp-nav ul li a span{ width:6px; height:6px;}
+	.fp-slidesNav.bottom ul{ margin-left:-12%; }
+	.fp-slidesNav.bottom ul li{ margin:10px 9px;}
+	.fp-slidesNav.bottom { bottom:55px; }
+
+}
+
+
+/* ****************************************************
+【.lity】
+***************************************************** */
+
+.lity { z-index: 9990; position: fixed; top: 0; right: 0; bottom: 0; left: 0; white-space: nowrap; outline: none !important; opacity: 0; }
+.lity.lity-opened { opacity: 1; }
+.lity.lity-closed { opacity: 0; }
+.lity * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.lity-wrap { z-index: 9990; position: fixed; top: 0; right: 0; bottom: 0; left: 0; text-align: center; outline: none !important; }
+.lity-wrap:before { content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.25em; }
+.lity-loader { z-index: 9991; position: absolute; top: 50%; margin-top: -0.8em; width: 100%; text-align: center; opacity: 0; }
+.lity-loading .lity-loader { opacity: 1; }
+.lity-container { z-index: 9992; position: relative; text-align: left; vertical-align: middle; display: inline-block;
+ white-space: normal; max-width: 100%; max-height: 100%; outline: none !important; }
+.lity-content { z-index: 9993; width: 100%; -webkit-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1);
+ -webkit-transition: -webkit-transform 0.3s ease; -o-transition: -o-transform 0.3s ease; transition: transform 0.3s ease; }
+.lity-loading .lity-content,
+.lity-closed .lity-content { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); -o-transform: scale(0.8); transform: scale(0.8);}
+.lity-content:after { content: ''; position: absolute; left: 0; top: 0; bottom: 0; display: block; right: 0; width: auto; height: auto; z-index: -1;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
+.lity-close { z-index: 9994; overflow: hidden; position: fixed; -webkit-appearance: none; cursor: pointer; text-decoration: none; text-align: center; padding: 0;
+  font-style: normal; border: 0; background: none; outline: none; -webkit-box-shadow: none; box-shadow: none; }
+.lity-close::-moz-focus-inner { border: 0; padding: 0; }
+.lity-close:hover,.lity-close:focus,.lity-close:active,.lity-close:visited {
+  text-decoration: none; text-align: center; padding: 0; font-style: normal; border: 0; background: none; outline: none; -webkit-box-shadow: none; box-shadow: none; }
+/* Image */
+.lity-image img { max-width: 100%; display: block; line-height: 0; border: 0; }
+/* iFrame */
+.lity-iframe .lity-container { width: 100%; }
+.lity-iframe-container { width: 100%; height: 0; padding-top: 56.25%; overflow: auto;pointer-events: auto;
+  -webkit-transform: translateZ(0); transform: translateZ(0); -webkit-overflow-scrolling: touch; }
+.lity-iframe-container iframe { position: absolute; display: block; top: 0; left: 0; width: 100%; height: 100%;}
+.lity-hide { display: none; }
+
+/********** カスタム設定 ********/
+
+.lity {
+	background-color:#071b26;
+}
+.lity-loader {
+	color: #fff;
+	font-size: 12px;
+	font-family: 'Ailerons';
+}
+.lity-close {
+	top: 38px; right: 33px;
+	width: 40px; height: 40px;
+}
+.lity-close, .lity-close:hover,.lity-close:focus,.lity-close:active,.lity-close:visited {
+/*	font-size: 50px; line-height: 50px;
+	color: #fff;
+	font-weight: 100;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);*/
+}
+
+.lity-close:before,
+.lity-close:after{ background:#d2c4a7 !important; height:40px; width:2px; top:0px; left:19px; content:''; display:block; position:absolute; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);}
+.lity-close:after{transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);}
+
+
+.lity-close:active { }
+.lity-iframe .lity-container { max-width: 1200px; }
+.lity-iframe-container iframe{
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+	background: #FFF;
+}
+
+@media screen and (max-width : 767px){
+	.lity-close {
+		right: 15px;
+	}
+}
+
+@media screen and (max-width : 479px){
+	.lity-close {
+		top: 15px; right: 15px;
+	}
+}
