@@ -35,8 +35,8 @@
     <div class="icon_fix icon_fix_top"></div>
     <div class="icon_fix icon_fix_bottom"></div>
     <div class="lang">
-      <a href="#" title="English" class="hover_line">EN</a>
       <a href="#" title="Japanese" class="hover_line">JP</a>
+      <a href="#" title="English" class="hover_line">EN</a>
     </div>
     <div class="nav_btn"><span></span> <span class="middle"></span> <span></span></div>
     <div class="nav_wrap">
@@ -64,14 +64,26 @@
       <section class="section concept">
         <h2 class="tlt">O R O V I E T N A M</h2>
         <div class="contents">
-          <div class="English">English Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
           <div class="Japanese">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスストテキスキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスストテキスキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+          <div class="English">English Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
         </div>
       </section>
       <!--section-->
       <section class="section about">
         <h2 class="tlt">A B O U T U S</h2>
         <div class="contents">
+          <div class="Japanese">
+            <div class="flex">
+              <dl class="about_info">
+                <dt>COMPANY INFO Japanese</dt>
+                <dd>Name bulan<br> E-mail info@bulan.tokyo<br> <a class="hover_line">電話 +81[0]50-5309-1468</a></dd>
+              </dl>
+              <dl class="about_info">
+                <dt>ACCESS Japanese</dt>
+                <dd>Name bulan<br> E-mail info@bulan.tokyo<br> <a class="hover_line">電話 +81[0]50-5309-1468</a></dd>
+              </dl>
+            </div>
+          </div>
           <div class="English">
             <div class="flex">
               <dl class="about_info">
@@ -80,18 +92,6 @@
               </dl>
               <dl class="about_info">
                 <dt>ACCESS English</dt>
-                <dd>Name bulan<br> E-mail info@bulan.tokyo<br> <a class="hover_line">Tel +81[0]50-5309-1468</a></dd>
-              </dl>
-            </div>
-          </div>
-          <div class="Japanese">
-            <div class="flex">
-              <dl class="about_info">
-                <dt>COMPANY INFO Japanese</dt>
-                <dd>Name bulan<br> E-mail info@bulan.tokyo<br> <a class="hover_line">Tel +81[0]50-5309-1468</a></dd>
-              </dl>
-              <dl class="about_info">
-                <dt>ACCESS Japanese</dt>
                 <dd>Name bulan<br> E-mail info@bulan.tokyo<br> <a class="hover_line">Tel +81[0]50-5309-1468</a></dd>
               </dl>
             </div>
@@ -285,6 +285,23 @@
       <section class="section contact">
         <h2 class="tlt">C O N T A C T</h2>
         <div class="contents">
+          <div class="Japanese">
+            <div class="f_form">
+              <form id="send_mail" action="" method="post">
+                <p><input name="name" type="text" size="20" placeholder="フルネーム" required="">
+                </p>
+                <p><input name="tel" type="text" placeholder="電話" required="">
+                </p>
+                <p><input name="mail" type="email" placeholder="内容" required="">
+                </p>
+                <p><textarea name="message" placeholder="内容 ..." rows="10" cols="50" required=""></textarea>
+                </p>
+                <p class="submit">
+                  <input type="submit" class="button" value="送　信 (内容確認)" class="submitBtn">
+                </p>
+              </form>
+            </div>
+          </div>
           <div class="English">
             <div class="f_form">
               <form id="send_mail" action="" method="post">
@@ -296,29 +313,12 @@
                 </p>
                 <p><textarea name="message" placeholder="Content ..." rows="10" cols="50" required=""></textarea>
                 </p>
-                <p class="submit bb">
-                  <input type="submit" value="Submit" class="submitBtn">
+                <p class="submit">
+                  <input type="submit" class="button" value="Submit" class="submitBtn">
                 </p>
               </form>
             </div>
-          </div>
-          <div class="Japanese">
-            <div class="f_form">
-              <form id="send_mail" action="" method="post">
-                <p><input name="name" type="text" size="20" placeholder="フルネーム" required="">
-                </p>
-                <p><input name="tel" type="text" placeholder="Tel" required="">
-                </p>
-                <p><input name="mail" type="email" placeholder="内容" required="">
-                </p>
-                <p><textarea name="message" placeholder="内容 ..." rows="10" cols="50" required=""></textarea>
-                </p>
-                <p class="submit bb">
-                  <input type="submit" value="送　信 (内容確認)" class="submitBtn">
-                </p>
-              </form>
-            </div>
-          </div>
+          </div
         </div>
       </section>
       <!--section-->
