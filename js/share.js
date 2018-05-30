@@ -62,6 +62,11 @@ $(document).ready(function() {
   });
   //section isInView
   $('section.section').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if ( $('.contact').hasClass('active') ) {
+      setTimeout(function(){
+        $('.icon_fix').remove();
+      }, 2000);
+    }
     $(this).find('.tlt').textillate({
       initialDelay: 400,
       in: {

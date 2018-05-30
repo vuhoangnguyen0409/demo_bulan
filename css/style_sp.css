@@ -8,6 +8,9 @@
 	.tlt {
 		font-size: 35px;
 	}
+	.about_info dt {
+		font-size: 21px;
+	}
 }
 @media screen and (max-width: 468px) {
 	.nav_wrap::before, .nav_wrap::after {

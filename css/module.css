@@ -52,12 +52,12 @@
 	.icon-home1:before{ border-width: 0 10px 10px; top:3px; left:5px;}
 	.icon-home1:after{ height:6px; width:6px; top:12px; left:8px; border-width: 5px 4px 0;}
 
-	.icon-moon1:before{ width:400px; height:400px; margin:-210px 0 0 -160px;}
+	.icon-moon1:before{ width:400px; height:400px; }
 
 }
 
 @media screen and (max-width : 479px){
-	.icon-moon1:before{ width:200px; height:200px; margin:-100px 0 0 -100px;}
+	.icon-moon1:before{ width:200px; height:200px; }
 }
 
 
@@ -806,7 +806,7 @@ html.fp-enabled,.fp-enabled body { margin: 0; padding: 0; overflow:hidden;/*Avoi
 	.fp-controlArrow.fp-next:before{ width:12px; height:12px; top:10px;}
 
 	#fp-nav{ right:0 !important;}
-	#fp-nav ul li{ margin:18px 16px;}
+	#fp-nav ul li{ margin:18px 10px;}
 
 	#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span{
 		height: 10px;
