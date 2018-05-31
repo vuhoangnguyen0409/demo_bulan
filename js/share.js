@@ -9,7 +9,7 @@ $(document).ready(function() {
     scrollingSpeed: 500,
     onLeave: function() { //scroll leave
       $('.icon_fix').stop().addClass("icon_fix_active");
-      $('.contents').removeClass("content_active");
+      $('.contents').removeClass("content_01_active content_02_active");
       $('.nav_btn').removeClass("btn_actived");
       $('.nav_wrap').removeClass("nav_actived");
     }
@@ -62,11 +62,14 @@ $(document).ready(function() {
   });
   //section isInView
   $('section.section').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    // scroll 2nd time
     if ( $('.contact').hasClass('active') ) {
+      $('.contents').removeClass('content_01').addClass('content_02');
       setTimeout(function(){
         $('.icon_fix').remove();
       }, 2000);
     }
+    // textillate
     $(this).find('.tlt').textillate({
       initialDelay: 400,
       in: {
@@ -74,10 +77,13 @@ $(document).ready(function() {
         effect: 'fadeInLeftBig',
       }
     });
-    $(this).find('.contents').addClass("content_active");
+    // animation icon_fix
     setTimeout(function() {
       $('.icon_fix').stop().removeClass("icon_fix_active");
       //title
     }, 1000);
+    // animation contents
+    $(this).find('.content_01').addClass("content_01_active");
+    $(this).find('.content_02').addClass("content_02_active");
   });
 }); // end ready
