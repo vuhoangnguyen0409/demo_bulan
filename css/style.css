@@ -393,7 +393,7 @@ section .Japanese {
 }
 
 .btn_actived span.middle {
-  display: none;
+  opacity: 0;
 }
 
 /*----------------------------------------
